@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css_file.css">
+    <script src="js/float-panel.js"></script>
+    <link rel="icon" href="images/logo.png">
+    <title>Beverages</title>
+  </head>
+  <body>
+    <br><br><br><br><br>
+    <h1 style="text-align:center; font-size:30px;"><hr>BEVERAGES<hr></h1>
+
+    <!--Title!-->
+    <div id="backtop">&#9650;</div>
+    <div class="slideshow-container slideanim">
+      <h2>Chef's Recommendation</h2>
+
+      <!--Image 1!-->
+        <div class="mySlides fade"><img src="images/kopiais.png" alt="tehais" >
+          <p><u><b>COFFEE ICE</b></u><br>
+          Coffee that is served cold is known as kopi ais.
+          It<br> may be made by either making coffee as usual
+          and<br> serving it over ice or in cold milk, or it can
+          be made<br> by brewing coffee cold. Sweeteners and flavors
+          may <br>be added in hot brewing before chilling since they
+          <br>dissolve more quickly.</p></div>
+
+          <!--Image 2!-->
+          <div class="mySlides fade"><img src="images/tehais.png" alt="tehais" >
+          <p><u><b>TEH ICE</b></u><br>
+          Teh ais refer to milky tea water mixed with ice. It<br>
+          is a favorite drink in the tropics. Iced tea is often a
+          <br>hot weather option, however, it remains<br> an all-time favorite for locals.</p></div>
+
+        <!--Image 3!-->
+        <div class="mySlides fade"><img  src="images/chamais.png"  alt="tehais">
+          <p><u><b>CHAM ICE</b></u><br>
+          Cham is a cultural drink that is also known as Kopi Cham <br>in Malaysia. A combination of coffee and milk
+          tea, where you<br> can taste the flavours of coffee and tea in one cup. Cham is an<br> alternative to your normal brew.
+          And this drink satisfies both <br>coffee and tea lovers.</p></div>
+
+        <!--Image 4!-->
+        <div class="mySlides fade"><img  src="images/nesloais.png" alt="tehais">
+          <p><u><b>NESLO ICE</b></u><br>
+          NESLO is a Malaysian drink loved by many, especially <br>those who love coffee.
+          The name of this drink comes <br>from combining the names of the two other drinks
+          that <br>make up Neslo to begin with— Nescafe and Milo.</p></div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <br>
+
+      <!--Dot!-->
+      <span class="dot" style="top:-130px;"  onclick="currentSlide(1)"></span>
+      <span class="dot" style="top:-130px;" onclick="currentSlide(2)"></span>
+      <span class="dot" style="top:-130px;" onclick="currentSlide(3)"></span>
+      <span class="dot" style="top:-130px;" onclick="currentSlide(4)"></span>
+    </div>
+
+    <!--Intro to different kind of drink!-->
+    <div class="show-beverage-container">
+      <div class="slideanim">
+        <div class="img1"> <img src="images/cham.png" alt="cham">  </div>
+        <div class="img2"><img src="images/coffee.png" alt="coffee"> </div>
+      </div>
+      <div class="slideanim">
+        <div class="img3"><img src="images/teh.png" alt="teh"> </div>
+        <div class="img4"><img src="images/neslo.png" alt="neslo"> </div>
+      </div>
+    </div>
+
+    <!--Interaction with user by random a beverage as a lucky drink!-->
+    <script type="text/javascript">
+    var r_text = new Array ();
+    r_text[0] = "COFFEE";
+    r_text[1] = "COFFEE ICE";
+    r_text[2] = "TEH";
+    r_text[3] = "TEH ICE";
+    r_text[4] = "CHAM";
+    r_text[5] = "CHAM ICE";
+    r_text[6] = "NESLO";
+    r_text[7] = "NESLO AIS";
+
+    var i = Math.floor(r_text.length * Math.random());
+
+    document.write("<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />")
+    document.write("<FONT SIZE=12><FONT COLOR='#000000'>"+"Your lucky drink today:" +"<br>"+"</FONT></left>");
+    document.write("<center><FONT SIZE=72><FONT COLOR='#000000'>"+r_text[i]  + "</FONT></center>");
+    </script>
+    <button type="button" style="left:43%; position:relative;"onClick="refreshPage()">Click me to pick your lucky drink</button>
+
+    <!--footer-->
+    <div class="footer-container-index3">
+      <h3>Email:<br> Gao Gao, owner<br><br>GAOGAO@gmail.com<br><br>Location:<br> 1, Jalan Brickfield 3, 50000 Kuala Lumpur, <br>Wilayah Persekutuan Kuala Lumpur </b><br><br> Hours: <br>7.30am to 3pm (Open-Daily)<br>
+        </h3>
+        <a href="https://www.facebook.com/" ><img src="images/fb.png" alt="FB icon"></a>
+        <a href="https://www.instagram.com/" ><img src="images/insta.png" alt="IG icon"></a>
+    </div>
+
+
+    <div class="navbar">
+      <button><a href="index.html">Home</a></button>
+      <button><a href="index2.html">Food</a></button>
+      <button><a href="index3.html">Beverages</a></button>
+      <button><a href="index4.html">Table Reservation</a></button>
+      <button><a href="index5.html">Contact</a></button>
+    </div>
+
+
+    <script src="js/Final_js.js"> </script>
+  </body>
+</html>
